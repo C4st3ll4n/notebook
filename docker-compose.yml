@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  api:
+    container_name: notebook-api
+    build: .
+    ports:
+      - "9292:3000"
+    volumes:
+      - .:/api
